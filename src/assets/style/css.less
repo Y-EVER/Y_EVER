@@ -1,0 +1,144 @@
+*{margin: 0;padding: 0;}
+html,body{height: 100%;width: 100%;}
+body{background: #eceff4;}
+html,body,div,span,a,input,p,textarea,select{font-size: 14px;}
+ol,ul {list-style:none;}
+/*弹性盒子布局*/
+.flex{
+	display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+	display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+	display: -moz-box; /* 老版本语法: Firefox (buggy) */
+	display: -ms-flexbox; /* 混合版本语法: IE 10 */
+	display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+}
+/*x轴对齐方式*/
+.flex_x_e{
+	justify-content: flex-end;
+	-webkit-box-pack: end;
+  -moz-justify-content: flex-end;
+  -webkit-justify-content: flex-end;
+}
+/*横向排列*/
+.flex_f_r{
+	-webkit-flex-direction: row;
+  	-moz-flex-direction: row;
+  	-ms-flex-direction: row;
+  	-o-flex-direction: row;
+  	flex-direction: row;
+}
+/*纵向排列*/
+.flex_f_c{
+	-webkit-flex-direction: column;
+  	-moz-flex-direction: column;
+  	-ms-flex-direction: column;
+  	-o-flex-direction: column;
+ 	flex-direction: column;
+}
+/*y轴对齐方式*/
+.flex_y_e{
+	align-items: flex-end;
+	-webkit-box-align: end;
+  	-moz-align-items: flex-end;
+  	-webkit-align-items: flex-end;
+}
+
+/*两端对齐*/
+.flex_b{
+	justify-content: space-between;
+	-webkit-box-pack: justify;
+  	-moz-justify-content: space-between;
+  	-webkit-justify-content: space-between;
+}
+.flex_b_w{
+	justify-content: space-between;
+	-webkit-box-pack: justify;
+  	-moz-justify-content: space-between;
+  	-webkit-justify-content: space-between;
+	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+}
+
+/*父元素宽度左右等间距均分相关*/
+.flex_a{
+	justify-content: space-around;
+	-webkit-justify-content: space-around;
+}
+.flex_a_w{
+	justify-content: space-around;
+	-webkit-justify-content: space-around;
+	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+}
+
+
+/*居中*/
+.flex_a_c{
+	justify-content: space-around;
+	align-items: center;
+	-webkit-box-align: center;
+  	-moz-align-items: center;
+  	-webkit-align-items: center;
+}
+.flex_b_c{
+	justify-content: space-between;
+	-webkit-box-pack: justify;
+  	-moz-justify-content: space-between;
+  	-webkit-justify-content: space-between;
+	align-items: center;
+	-webkit-box-align: center;
+  	-moz-align-items: center;
+  	-webkit-align-items: center;
+}
+.flex_x_c{
+	justify-content: center;
+	-webkit-box-pack: center;
+  	-moz-justify-content: center;
+  	-webkit-justify-content: center;
+}
+.flex_y_c{
+	align-items: center;
+	-webkit-box-align: center;
+  	-moz-align-items: center;
+  	-webkit-align-items: center;
+}
+.flex_c_c{
+	justify-content: center;
+	-webkit-box-pack: center;
+  	-moz-justify-content: center;
+  	-webkit-justify-content: center;
+	align-items: center;
+	-webkit-box-align: center;
+  	-moz-align-items: center;
+  	-webkit-align-items: center;
+}
+
+.box_sizing{
+	-moz-box-sizing: border-box;  
+    -webkit-box-sizing: border-box; 
+    -o-box-sizing: border-box; 
+    -ms-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+.d_fix{display:flex;align-items: center;}
+.m_t_15{margin-top: 15px;}
+.m_b_15{margin-bottom: 15px;}
+.t_a_center{text-align: center;}
+.w_50{width: 50%;}
+.w_20{width:20%;}
+.m_l_1{margin-left: 1%;}
+.clear{clear: both;}
+.w_h_50{width:50px;height: 50px;}
+.w_h_30{width:30px;height: 30px;}
+.pad_15{padding: 15px;}
+.vfh{overflow: hidden;}
+// 表格
+.el-table td, .el-table th{padding: 8px 0;text-align: center;}
+//表单左右结构型
+.form_one .el-form-item{border: 1px solid #DCDFE6;}
+.form_one .el-form-item__label{padding: 15px;border-right: 1px solid #DCDFE6;margin-right: 15px;background: #f4f7fc;}
+.form_one .el-form-item__content{width: 70%;}
+.form_one > div > .el-form-item:nth-child(2n-1){border-right: none;}
+
+
