@@ -1,0 +1,10 @@
+搭建express脚手架
+1.全局安装npm i express -g
+2.本地依赖 npm i express --save
+3.测试安装是否成功 express -h
+4.脚手架的全局环境 npm install express-generator -g
+5.创建脚手架项目(项目名为server) express server
+6.按照提示安装依赖和运行
+	cd server 
+	npm install
+	npm start

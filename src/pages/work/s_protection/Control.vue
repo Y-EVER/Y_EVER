@@ -28,7 +28,7 @@
         <el-tabs type="border-card">
             <el-tab-pane label="安保管理"></el-tab-pane>
         </el-tabs>
-        <el-table class :data="tableData" border style="width: 96%;margin: 20px auto;">
+        <el-table class :data="tableData" border style="width: 98%;margin: 20px auto;">
             <el-table-column prop="date" label="日期" width="180"></el-table-column>
             <el-table-column prop="name" label="姓名" width="180"></el-table-column>
             <el-table-column prop="address" label="地址"></el-table-column>
@@ -39,7 +39,7 @@
         <el-tabs type="border-card">
             <el-tab-pane label="安保管理"></el-tab-pane>
         </el-tabs>
-        <el-table class :data="tableData" border style="width: 96%;margin: 20px auto;">
+        <el-table class :data="tableData" border style="width: 98%;margin: 20px auto;">
             <el-table-column prop="date" label="日期" width="180"></el-table-column>
             <el-table-column prop="name" label="姓名" width="180"></el-table-column>
             <el-table-column prop="address" label="地址"></el-table-column>
@@ -50,7 +50,7 @@
         <el-tabs type="border-card">
             <el-tab-pane label="安保管理"></el-tab-pane>
         </el-tabs>
-        <el-table class :data="tableData" border style="width: 96%;margin: 20px auto;">
+        <el-table class :data="tableData" border style="width: 98%;margin: 20px auto;">
             <el-table-column prop="date" label="日期" width="180"></el-table-column>
             <el-table-column prop="name" label="姓名" width="180"></el-table-column>
             <el-table-column prop="address" label="地址"></el-table-column>
@@ -140,7 +140,10 @@ export default {
   width: 20%;
 }
 .el-col:first-child {
-  padding-left: 0;
+  padding-left: 0 !important;
+}
+.el-col:last-child {
+  padding-right: 0 !important;
 }
 .el-col > div {
   padding: 15px;
