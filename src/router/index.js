@@ -11,6 +11,11 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: '/',
+    name: 'login',
+    component: () => import('../pages/Login.vue')
+  },
+  {
+    path: '/home',
     name: 'home',
     component: Home,
     children:[
@@ -63,11 +68,6 @@ const routes = [
           {path: '/home/data',name: 'data',component: () => import('../pages/set_up/Data.vue')},//数据备份 
           {path: '/home/login_log',name: 'login_log',component: () => import('../pages/set_up/Login_log.vue')},//登录日志 
     ]
-  },
-  {
-    path: '/login',
-    name: 'login',
-    component: () => import('../pages/Login.vue')
   }
 ]
 

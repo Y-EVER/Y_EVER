@@ -12,12 +12,12 @@
       </div>
     </div>
     <el-table :data="tableData" border style="width: 98%;margin:20px auto">
-      <el-table-column prop="name" label="器材名称"></el-table-column>
+      <el-table-column prop="name" label="器材名称" width="180"></el-table-column>
       <el-table-column prop="address" label="区域地点"></el-table-column>
       <el-table-column prop="p_name" label="维护人" width="180"></el-table-column>
       <el-table-column prop="phone" label="维护电话" width="180"></el-table-column>
       <el-table-column prop="date" label="维护时间" width="180"></el-table-column>
-      <el-table-column prop="beizhu" label="备注"></el-table-column>
+      <el-table-column prop="beizhu" label="备注" width="180"></el-table-column>
     </el-table>
     <div class="pad_15 block t_a_center">
       <el-pagination
@@ -85,12 +85,12 @@ export default {
       gridData: [
         {
           date: "2016-05-02",
-          name: "王小虎",
+          name: "张三",
           address: "上海市普陀区金沙江路 1518 弄"
         },
         {
           date: "2016-05-04",
-          name: "王小虎",
+          name: "历史",
           address: "上海市普陀区金沙江路 1518 弄"
         },
         {
